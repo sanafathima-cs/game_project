@@ -1,19 +1,19 @@
 import { assign, createActor, setup } from "xstate";
 import type { Settings } from "speechstate";
 import { speechstate } from "speechstate";
-//import { azureLanguageCredentials, KEY } from "./azure";
+import { azureLanguageCredentials, KEY } from "./azure";
 import type { DMContext, DMEvents } from "./types";
 import { createBrowserInspector } from "@statelyai/inspect";
 
 
 const azureCredentials = {
   endpoint: "https://swedencentral.api.cognitive.microsoft.com/sts/v1.0/issuetoken",
-  //key: KEY,
+  key: KEY,
 };
 
 const settings: Settings = {
-  //azureCredentials: azureCredentials,
-  //azureLanguageCredentials: azureLanguageCredentials,
+  azureCredentials: azureCredentials,
+  azureLanguageCredentials: azureLanguageCredentials,
   azureRegion: "swedencentral",
   asrDefaultCompleteTimeout: 2000,
   asrDefaultNoInputTimeout: 8000,
