@@ -1,0 +1,12 @@
+.vercel/
+
+# Ignore node modules
+node_modules/
+
+# Ignore build outputs
+
+public/assets/dist/
+
+
+# Ignore sensitive file
+.env
