@@ -10,3 +10,4 @@ public/assets/dist/
 
 # Ignore sensitive file
 .envgame-demo.mov
+dist/
