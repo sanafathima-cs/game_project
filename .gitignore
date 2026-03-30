@@ -4,10 +4,9 @@
 node_modules/
 
 # Ignore build outputs
-
-public/assets/dist/
-
-
-# Ignore sensitive file
-.envgame-demo.mov
+public/assets/
 dist/
+
+# Ignore sensitive files
+.env
+game-demo.mov
